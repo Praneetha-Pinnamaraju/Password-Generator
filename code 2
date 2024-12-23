@@ -1,0 +1,10 @@
+import random
+import string
+x = string.ascii_uppercase
+y = string.ascii_lowercase
+symbols = "!@#$%^&*()"
+digits = string.digits
+combining = x+y+symbols+digits
+n = int(input("enter length of password"))
+password = ''.join(random.sample(combining,n))
+print("your password is ",password)
